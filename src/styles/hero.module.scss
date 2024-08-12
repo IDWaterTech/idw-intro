@@ -6,3 +6,34 @@
     color: #006AA6;
   }
 }
+.imageGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  .imageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin: 8px;
+    flex: 0 0 20%;
+    span {
+      padding: 4px 8px;
+      background-color: rgba(255,255,255,0.3);
+      backdrop-filter: blur(5px);
+      border-radius: 4px;
+      color: #fefefe;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .imageGroup { 
+    .imageBox{
+      flex: 0 0 30%;
+    }
+  }
+}

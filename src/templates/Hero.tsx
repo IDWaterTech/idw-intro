@@ -19,28 +19,28 @@ const navbarList = [
     name: 'DESCRIPTION',
   },
 ];
-// const functionsImage = [
-//   {
-//     name: '即時監測',
-//     url: '/assests/images/alert.png',
-//   },
-//   {
-//     name: '數據分析',
-//     url: '/assests/images/chart.png',
-//   },
-//   {
-//     name: 'AI養殖',
-//     url: '/assests/images/ai.png',
-//   },
-//   {
-//     name: '養成計畫',
-//     url: '/assests/images/daily.png',
-//   },
-//   {
-//     name: '紀錄日誌',
-//     url: '/assests/images/calendar.png',
-//   },
-// ];
+const functionsImage = [
+  {
+    name: '即時監測',
+    url: 'alert.png',
+  },
+  {
+    name: '數據分析',
+    url: 'chart.png',
+  },
+  {
+    name: 'AI養殖',
+    url: 'ai.png',
+  },
+  {
+    name: '養成計畫',
+    url: 'daily.png',
+  },
+  {
+    name: '紀錄日誌',
+    url: 'calendar.png',
+  },
+];
 const Hero = () => (
   <Background>
     <Section yPadding="py-0 px-0" navbar="true">
@@ -63,7 +63,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-8 pb-0">
       <HeroOneButton
         title={
           <>
@@ -72,6 +72,18 @@ const Hero = () => (
           </>
         }
       />
+    </Section>
+    <Section yPadding="pt-16 pb-16">
+      <div className={styles.imageGroup}>
+        {functionsImage.map((image, i) => {
+          return (
+            <div className={styles.imageBox} key={`image_${i}`}>
+              <img src={`/assets/images/${image.url}`} alt={image.name} />
+              <span>{image.name}</span>
+            </div>
+          );
+        })}
+      </div>
     </Section>
   </Background>
 );

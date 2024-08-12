@@ -1,0 +1,22 @@
+.description,.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 16px;
+  * {
+    color: #fefefe;
+  }
+}
+.description {
+  width: 30%;
+}
+.info {
+  width: 50%;
+  .item {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 8px;
+    }
+  }
+}

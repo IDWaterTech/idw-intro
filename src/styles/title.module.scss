@@ -1,0 +1,30 @@
+.titleBox {
+  display: flex;
+  .titleText {
+    // min-width: 200px;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #006AA6;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00324E;
+    }
+  }
+  .decoration {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(#40657A,0.1);
+    // max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .titleBox {
+    margin-bottom: 16px;
+    .decoration {
+      display: none;
+    }
+  }
+}

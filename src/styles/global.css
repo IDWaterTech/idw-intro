@@ -10,8 +10,10 @@
 }
 
 .hero-title,.hero-subtitle {
+  font-size: 2.5rem;
   color: #fefefe;
   font-weight: bold;
+  line-height: 4rem;
 }
 .hero-subtitle {
   font-size: 2rem;
@@ -19,7 +21,37 @@
 }
 .bg {
   background-image: url('/assets/images/hero-bg.png');
-  background-size: 100% auto;
+  background-size: auto 100vh;
   background-position: center;
   background-repeat: no-repeat;
+}
+.infoGroup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoBox {
+  width: 50%;
+  display: flex;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .hero-title,.hero-subtitle {
+    line-height: 3rem;
+  }
+  .infoBox {
+    width:100%;
+    display: block;
+  }
+}
+// scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: none; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7F98A6;
 }
