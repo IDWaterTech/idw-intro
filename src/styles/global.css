@@ -3,3 +3,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.nav-bg {
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(5px);
+}
+
+.hero-title,.hero-subtitle {
+  color: #fefefe;
+  font-weight: bold;
+}
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.bg {
+  background-image: url('/assets/images/hero-bg.png');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
