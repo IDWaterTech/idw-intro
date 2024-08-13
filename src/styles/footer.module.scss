@@ -8,7 +8,7 @@
   }
 }
 .description {
-  width: 30%;
+  width: 25%;
 }
 .info {
   width: 50%;
@@ -17,6 +17,9 @@
     align-items: center;
     span {
       margin-left: 8px;
+    };
     }
-  }
+}
+.title{
+  font: 1.5em sans-serif;
 }
