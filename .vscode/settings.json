@@ -26,5 +26,6 @@
   "prettier.ignorePath": ".gitignore",
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  } // Don't run prettier for files listed in .gitignore
+  },
+  "cSpell.words": ["idwater", "Neihu", "Ruiguang"] // Don't run prettier for files listed in .gitignore
 }
