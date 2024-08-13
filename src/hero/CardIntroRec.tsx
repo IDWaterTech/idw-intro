@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface CardProps {
-  imageSrc: string;
+  imageSrc?: string;
   title: string;
   description: string;
   rightAnglesPosit?: number; // 直角保留 全部0 左上1 右上2 左下3 右下4 全園5
@@ -37,12 +37,20 @@ const CardIntro: React.FC<CardProps> = ({
       break;
   }
   return (
-    <div className={`grid grid-cols-12 p-4 ${posit} bg-white shadow-2xl`}>
-      <div className="col-span-4 flex items-center justify-center">
-        <div className="size-24 overflow-hidden rounded-full">
-          <img className="size-full object-cover" src={imageSrc} alt={title} />
+    <div className={`mx-2 grid grid-cols-12 p-4 ${posit} bg-white shadow-lg`}>
+      {imageSrc ? (
+        <div className="col-span-4 flex items-center justify-center">
+          <div className="size-24 overflow-hidden rounded-full">
+            <img
+              className="size-full object-cover"
+              src={imageSrc}
+              alt={title}
+            />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div></div>
+      )}
       <div className="col-span-8">
         <h3 className="mb-2 text-xl font-bold">{title}</h3>
         <span

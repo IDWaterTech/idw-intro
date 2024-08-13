@@ -37,7 +37,9 @@ const CardIntro: React.FC<CardProps> = ({
       break;
   }
   return (
-    <div className={`grid grid-cols-12 gap-x-2 ${posit} bg-white shadow-2xl`}>
+    <div
+      className={`grid grid-cols-12 gap-x-2 ${posit} bg-white shadow-lg max-[768px]:rounded-3xl`}
+    >
       <div className="col-span-12 rounded-t-3xl">
         <img
           className="h-[200px] w-full rounded-t-3xl object-cover p-8"

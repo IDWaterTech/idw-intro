@@ -34,6 +34,16 @@
   width: 50%;
   display: flex;
   margin-bottom: 24px;
+  z-index: 9999;
+}
+.topDecoration {
+  top: 0;
+  right: 24px
+}
+.bottomDecoration {
+  bottom: 0;
+  left: 24px;
+  transform: rotate(180deg);
 }
 @media (max-width: 768px) {
   .hero-title,.hero-subtitle {
@@ -42,6 +52,11 @@
   .infoBox {
     width:100%;
     display: block;
+  }
+}
+@media (max-width: 425px) {
+  .topDecoration,.bottomDecoration {
+    max-width: 200px;
   }
 }
 // scrollbar

@@ -8,7 +8,7 @@
   }
 }
 .description {
-  width: 25%;
+  width: 40%;
 }
 .info {
   width: 50%;
@@ -18,8 +18,29 @@
     span {
       margin-left: 8px;
     };
-    }
+  }
 }
 .title{
   font: 1.5em sans-serif;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+  .description,.info {
+    width: 100%;
+  }
+  .description {
+    margin: 0;
+  }
+  .info {
+    margin: 16px 40px;
+    .item {
+      margin-bottom: 8px;
+      span {
+        font-size: 0.75rem;
+      }
+    }
+  }
 }

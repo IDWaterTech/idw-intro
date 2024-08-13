@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { Section } from '@/layout/Section';
 
-const Aiot = () => (
+const AIot = () => (
   <Section
     title="Sponsors"
     description="Our sponsors' exceptional support has made this project possible."
@@ -12,7 +12,7 @@ const Aiot = () => (
       target="_blank"
     >
       <Image
-        src="/assets/images/sentry-dark.png"
+        src="/assets/images/ID-WATER-LOGO.png"
         alt="Sentry"
         width={260}
         height={224}
@@ -20,4 +20,4 @@ const Aiot = () => (
     </a>
   </Section>
 );
-export { Aiot };
+export { AIot };

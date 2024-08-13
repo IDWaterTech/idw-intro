@@ -16,7 +16,7 @@ const Sponsors = () => (
               target="_blank"
             >
               <Image
-                src="/assets/images/sentry-dark.png"
+                src="/assets/images/ID-WATER-LOGO.png"
                 alt="Sentry"
                 width={260}
                 height={224}

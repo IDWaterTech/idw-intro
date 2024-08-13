@@ -33,13 +33,21 @@ const cardInfo = [
 
 const Banner = () => (
   <Background color="bg-primary-100">
+    <img
+      className="topDecoration absolute"
+      src="/assets/images/decoration.png"
+    ></img>
+    <img
+      className="bottomDecoration absolute"
+      src="/assets/images/decoration.png"
+    ></img>
     <Section>
       <TitleTag
         title="多樣功能"
         subTitle="精準掌握數據"
         decoration="Precision Analytics"
       ></TitleTag>
-      <div className="infoGroup">
+      <div className="infoGroup my-2">
         {cardInfo.map((info, i) => {
           return (
             // eslint-disable-next-line react/jsx-key
