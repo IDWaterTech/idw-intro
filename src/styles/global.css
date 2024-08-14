@@ -28,7 +28,7 @@
   font-weight: normal;
 }
 .bg {
-  background-image: url('/assets/images/hero-bg.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url('/assets/images/hero-bg.png');
   background-size: auto 100vh;
   background-position: center;
   background-repeat: no-repeat;
