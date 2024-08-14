@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { Background } from '../background/Background';
@@ -11,14 +12,17 @@ const navbarList = [
   {
     id: 1,
     name: 'ABOUT',
+    url: '/',
   },
   {
     id: 2,
     name: 'TECHNIQUE',
+    url: '/#tech',
   },
   {
     id: 3,
     name: 'DESCRIPTION',
+    url: '/#des',
   },
 ];
 const functionsImage = [
@@ -55,7 +59,7 @@ const Hero = () => {
           {navbarList.map((nav) => {
             return (
               <li className={styles.listItem} key={nav.id}>
-                {nav.name}
+                <Link href={nav.url}>{nav.name}</Link>
               </li>
             );
           })}

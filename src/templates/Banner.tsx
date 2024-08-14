@@ -32,38 +32,40 @@ const cardInfo = [
 ];
 
 const Banner = () => (
-  <Background color="bg-primary-100">
-    <img
-      className="topDecoration absolute"
-      src="/assets/images/decoration.png"
-    ></img>
-    <img
-      className="bottomDecoration absolute"
-      src="/assets/images/decoration.png"
-    ></img>
-    <Section>
-      <TitleTag
-        title="多樣功能"
-        subTitle="精準掌握數據"
-        decoration="Precision Analytics"
-      ></TitleTag>
-      <div className="infoGroup my-2">
-        {cardInfo.map((info, i) => {
-          return (
-            // eslint-disable-next-line react/jsx-key
-            <div className="infoBox" key={i}>
-              <CardIntro
-                imageSrc={`/assets/images/${info.imageSrc}`}
-                title={info.title}
-                description={info.description}
-                rightAnglesPosit={info.rightAnglesPosit}
-              ></CardIntro>
-            </div>
-          );
-        })}
-      </div>
-    </Section>
-  </Background>
+  <div id="des">
+    <Background color="bg-primary-200">
+      <img
+        className="topDecoration absolute"
+        src="/assets/images/decoration.png"
+      ></img>
+      <img
+        className="bottomDecoration absolute"
+        src="/assets/images/decoration.png"
+      ></img>
+      <Section>
+        <TitleTag
+          title="多樣功能"
+          subTitle="精準掌握數據"
+          decoration="Precision Analytics"
+        ></TitleTag>
+        <div className="infoGroup my-2">
+          {cardInfo.map((info, i) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              <div className="infoBox" key={i}>
+                <CardIntro
+                  imageSrc={`/assets/images/${info.imageSrc}`}
+                  title={info.title}
+                  description={info.description}
+                  rightAnglesPosit={info.rightAnglesPosit}
+                ></CardIntro>
+              </div>
+            );
+          })}
+        </div>
+      </Section>
+    </Background>
+  </div>
 );
 
 export { Banner };

@@ -40,7 +40,7 @@ const cardInfo = [
 
 const Benefit = () => (
   <>
-    <Background color="bg-primary-250">
+    <Background color="bg-primary-200">
       <Section>
         <TitleTag
           title="8大優勢"

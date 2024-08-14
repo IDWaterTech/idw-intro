@@ -32,8 +32,8 @@ const cardInfo = [
   },
 ];
 const AIot = () => (
-  <>
-    <Background color="bg-gray-50">
+  <div id="tech">
+    <Background color="bg-primary-100">
       <Section>
         <TitleTag
           title="AIoT"
@@ -62,6 +62,6 @@ const AIot = () => (
         </div>
       </Section>
     </Background>
-  </>
+  </div>
 );
 export { AIot };

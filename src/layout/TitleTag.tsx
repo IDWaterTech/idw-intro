@@ -31,7 +31,7 @@ const TitleTag = (props: ISectionProps) => (
     </div>
     <div
       // eslint-disable-next-line eqeqeq
-      className={`font-bold ${styles.decoration} ${props.center == 'true' ? 'absolute right-60 top-0' : ''}`}
+      className={`font-black ${styles.decoration} ${props.center == 'true' ? 'absolute right-60 top-0' : ''}`}
     >
       {props.decoration}
     </div>

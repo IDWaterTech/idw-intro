@@ -1,7 +1,9 @@
 .titleBox {
   display: flex;
+  z-index: 999;
   .titleText {
     // min-width: 200px;
+    z-index: 999;
     .title {
       font-size: 1.5rem;
       color: #006AA6;
