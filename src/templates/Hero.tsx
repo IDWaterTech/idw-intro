@@ -39,17 +39,21 @@ const Hero = () => {
           title={
             <>
               {'ID Water 專家系統\n'}
-              <span className="hero-subtitle">打造可信賴的AI智慧養殖系統</span>
+              <span className="text-3xl font-normal">
+                打造可信賴的AI智慧養殖系統
+              </span>
             </>
           }
         />
       </Section>
       <Section yPadding="pt-16 pb-16">
-        <div className={styles.imageGroup}>
+        <div
+          className={`flex w-full flex-wrap items-center justify-center ${styles.imageGroup}`}
+        >
           {functionsImage.map((image, i) => {
             return (
               <div
-                className={`${styles.imageBox} ${styles['card-animation']} ${
+                className={`flex flex-col items-center justify-center ${styles.imageBox} ${styles['card-animation']} ${
                   isVisible ? styles['card-animation-enter'] : ''
                 } ${styles['card-hover']}`}
                 key={`image_${i}`}

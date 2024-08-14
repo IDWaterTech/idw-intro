@@ -52,13 +52,13 @@ const Benefit = () => (
           {/* <div className="imgBox mx-2">
             <img src="/assets/images/menu.png" alt=""></img>
           </div> */}
-          <div className="svgGroup grid grid-cols-4">
+          <div className="svgGroup grid w-full grid-cols-4">
             {cardInfo.map((info, i) => {
               return (
                 // eslint-disable-next-line react/jsx-key
-                <div className="infoBox flex items-center" key={i}>
+                <div className="infoBox mb-6 flex w-full items-center" key={i}>
                   <div
-                    className="svgBox shadow-sm"
+                    className="svgBox relative size-8 bg-white shadow-sm"
                     dangerouslySetInnerHTML={{ __html: info.svg }}
                   ></div>
                   <div className="title mx-1 text-xl font-black text-dark-900">
