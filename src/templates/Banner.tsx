@@ -26,7 +26,7 @@ const cardInfo = [
   {
     imageSrc: 'des_daily.png',
     title: '每日任務紀錄',
-    description: `立打造新手也可以成功養殖的葵花寶典，掌握成功的秘訣<br>．詳列每日須做的事項<br>．自由彈性設定事項`,
+    description: `打造新手也可以成功養殖的葵花寶典，掌握成功的秘訣<br>．詳列每日須做的事項<br>．自由彈性設定事項`,
     rightAnglesPosit: 1,
   },
 ];
@@ -48,11 +48,11 @@ const Banner = () => (
           subTitle="精準掌握數據"
           decoration="Precision Analytics"
         ></TitleTag>
-        <div className="infoGroup my-8">
+        <div className="my-8 flex w-full flex-wrap">
           {cardInfo.map((info, i) => {
             return (
               // eslint-disable-next-line react/jsx-key
-              <div className="infoBox" key={i}>
+              <div className="infoBox mb-6 flex w-6/12" key={i}>
                 <CardIntro
                   imageSrc={`/assets/images/${info.imageSrc}`}
                   title={info.title}

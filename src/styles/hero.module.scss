@@ -1,22 +1,11 @@
 .listItem {
-  font-size: 1rem;
   color:#00324E;
-  cursor: pointer;
   &:hover {
     color: #006AA6;
   }
 }
 .imageGroup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
   .imageBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     // margin: 8px;
     flex: 0 0 20%;
     span {
@@ -46,12 +35,6 @@
     transform: translateY(4);
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
-  }
-}
-#tech {
-  .bg-primary-100::after {
-    content: '';
-    
   }
 }
 

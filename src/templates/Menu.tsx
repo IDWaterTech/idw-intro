@@ -31,7 +31,10 @@ const Menu = () => {
         <NavbarTwoColumns logo={<Logo xl />}>
           {navbarList.map((nav) => {
             return (
-              <li className={styles.listItem} key={nav.id}>
+              <li
+                className={`cursor-pointer text-base ${styles.listItem}`}
+                key={nav.id}
+              >
                 <Link href={nav.url}>{nav.name}</Link>
               </li>
             );

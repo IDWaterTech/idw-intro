@@ -44,11 +44,11 @@ const AIot = () => (
           {/* <div className="imgBox mx-2">
             <img src="/assets/images/menu.png" alt=""></img>
           </div> */}
-          <div className="infoGroup">
+          <div className="flex w-full flex-wrap">
             {cardInfo.map((info, i) => {
               return (
                 // eslint-disable-next-line react/jsx-key
-                <div className="infoBox" key={i}>
+                <div className="infoBox mb-6 flex w-6/12" key={i}>
                   <CardIntroRec
                     title={info.title}
                     description={info.description}

@@ -10,7 +10,7 @@ type ISectionProps = {
 const TitleTag = (props: ISectionProps) => (
   <div
     // eslint-disable-next-line eqeqeq
-    className={`relative ${styles.titleBox}`}
+    className={`relative flex ${styles.titleBox}`}
   >
     <div
       // eslint-disable-next-line eqeqeq
@@ -18,13 +18,13 @@ const TitleTag = (props: ISectionProps) => (
     >
       <div
         // eslint-disable-next-line eqeqeq
-        className={`text-center font-black ${styles.title}`}
+        className={`text-center text-3xl font-black ${styles.title}`}
       >
         {props.title}
       </div>
       <div
         // eslint-disable-next-line eqeqeq
-        className={`font-black ${styles.subtitle} w-full text-center`}
+        className={`font-black ${styles.subtitle} w-full text-center text-2xl`}
       >
         {props.subTitle}
       </div>

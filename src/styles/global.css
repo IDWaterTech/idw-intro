@@ -12,38 +12,19 @@
   }
 }
 
+/* nav-bar */
 .nav-bg {
   background-color: rgba(255,255,255,0.6);
   backdrop-filter: blur(5px);
 }
-
-.hero-title,.hero-subtitle {
-  font-size: 2.5rem;
-  color: #fefefe;
-  font-weight: bold;
-  line-height: 4rem;
-}
-.hero-subtitle {
-  font-size: 2rem;
-  font-weight: normal;
-}
+/* Hero */
 .bg {
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url('/assets/images/hero-bg.png');
   background-size: auto 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.infoGroup {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.infoBox {
-  width: 50%;
-  display: flex;
-  margin-bottom: 24px;
-  z-index: 9999;
-}
+/* 多樣功能部分的上下圖 */
 .topDecoration {
   top: 0;
   right: 24px;
@@ -55,18 +36,9 @@
   transform: rotate(180deg);
   opacity: 0.3;
 }
-.svgGroup {
-  width: 100%;
-}
-/* .svgGroup .infoBox {
-  width: 25%;
-} */
+/* benefit */
 .svgBox {
-  width: 32px;
-  height: 32px;
   border-radius: 50%;
-  background-color: #fefefe;
-  position: relative;
 }
 .svgBox svg {
   position: absolute;
@@ -74,13 +46,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.svgGroup .infoBox {
-  width: 100%;
-}
 @media (max-width: 768px) {
-  .hero-title,.hero-subtitle {
-    line-height: 3rem;
-  }
   .infoBox {
     width:100%;
     display: block;

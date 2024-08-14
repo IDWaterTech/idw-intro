@@ -12,8 +12,8 @@ const Footer = () => (
             width={200}
             alt="idwater"
           />
-          <div className={styles.description}>
-            <div className={styles.title}>艾滴科技</div>
+          <div className={`flex flex-col justify-around ${styles.description}`}>
+            <div className="text-xl">艾滴科技</div>
             <div className={styles.subtitle}>
               用科技引領全球
               <br />
@@ -109,8 +109,8 @@ const Footer = () => (
             </div>
           </div>
         </div>
-        <div className={styles.info}>
-          <div className={styles.item}>
+        <div className={`flex flex-col justify-around ${styles.info}`}>
+          <div className={`flex items-center ${styles.item}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -129,7 +129,7 @@ const Footer = () => (
             {/* <img src="/assets/images/phone-outline.png" width={16}></img> */}
             <span>TEL : 02-2627-2667</span>
           </div>
-          <div className={styles.item}>
+          <div className={`flex items-center ${styles.item}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -148,7 +148,7 @@ const Footer = () => (
             {/* <img src="/assets/images/email-outline.png" width={16}></img> */}
             <span>E-mail : administration@idwater.com.tw</span>
           </div>
-          <div className={styles.item}>
+          <div className={`flex items-center ${styles.item}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
