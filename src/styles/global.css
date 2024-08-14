@@ -74,6 +74,9 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.svgGroup .infoBox {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .hero-title,.hero-subtitle {
     line-height: 3rem;

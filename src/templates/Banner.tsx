@@ -48,7 +48,7 @@ const Banner = () => (
           subTitle="精準掌握數據"
           decoration="Precision Analytics"
         ></TitleTag>
-        <div className="infoGroup my-2">
+        <div className="infoGroup my-8">
           {cardInfo.map((info, i) => {
             return (
               // eslint-disable-next-line react/jsx-key

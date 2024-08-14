@@ -61,7 +61,7 @@ const Benefit = () => (
                     className="svgBox shadow-sm"
                     dangerouslySetInnerHTML={{ __html: info.svg }}
                   ></div>
-                  <div className="title mx-1 font-black text-dark-900">
+                  <div className="title mx-1 text-xl font-black text-dark-900">
                     {info.title}
                   </div>
                 </div>

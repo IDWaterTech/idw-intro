@@ -10,31 +10,31 @@ type ISectionProps = {
 const TitleTag = (props: ISectionProps) => (
   <div
     // eslint-disable-next-line eqeqeq
-    className={`${styles.titleBox} ${props.center == 'true' ? 'relative' : ''}`}
+    className={`relative ${styles.titleBox}`}
   >
     <div
       // eslint-disable-next-line eqeqeq
-      className={`${styles.titleText} ${props.center == 'true' ? 'w-full' : ''}`}
+      className={`w-full ${styles.titleText}`}
     >
       <div
         // eslint-disable-next-line eqeqeq
-        className={`font-black ${styles.title} ${props.center == 'true' ? 'text-center' : ''}`}
+        className={`text-center font-black ${styles.title}`}
       >
         {props.title}
       </div>
       <div
         // eslint-disable-next-line eqeqeq
-        className={`font-black ${styles.subtitle} ${props.center == 'true' ? 'w-full text-center' : ''}`}
+        className={`font-black ${styles.subtitle} w-full text-center`}
       >
         {props.subTitle}
       </div>
     </div>
-    <div
+    {/* <div
       // eslint-disable-next-line eqeqeq
-      className={`font-black ${styles.decoration} ${props.center == 'true' ? 'absolute right-60 top-0' : ''}`}
+      className={`font-black ${styles.decoration} absolute right-60 top-0`}
     >
       {props.decoration}
-    </div>
+    </div> */}
   </div>
 );
 

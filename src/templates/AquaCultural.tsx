@@ -40,8 +40,8 @@ const AquaCultural = () => (
           subTitle="一站式養殖服務"
           decoration="AQUACULTURAL SOLUTION"
         ></TitleTag>
-        <div className="content py-8">
-          <span className="text-dark-900">
+        <div className="content py-8 text-center">
+          <span className="text-center text-dark-900">
             搭配自動化設備，更快速即時管理養殖，提升養殖效率，確保最佳養殖環境。依照個人需求彈性設定調整，滿足不同的養殖需求與目標。
           </span>
         </div>
