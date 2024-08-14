@@ -4,6 +4,14 @@
 
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@layer base {
+  html {
+    font-family: "Noto Sans TC", system-ui,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
 .nav-bg {
   background-color: rgba(255,255,255,0.6);
   backdrop-filter: blur(5px);
@@ -44,6 +52,25 @@
   bottom: 0;
   left: 24px;
   transform: rotate(180deg);
+}
+.svgGroup {
+  width: 100%;
+}
+/* .svgGroup .infoBox {
+  width: 25%;
+} */
+.svgBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  position: relative;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 }
 @media (max-width: 768px) {
   .hero-title,.hero-subtitle {

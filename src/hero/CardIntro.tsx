@@ -48,9 +48,9 @@ const CardIntro: React.FC<CardProps> = ({
         />
       </div>
       <div className="col-span-12 mx-2 p-4">
-        <h3 className="mb-2 text-xl font-bold">{title}</h3>
+        <h3 className="mb-2 text-xl font-bold text-dark-900">{title}</h3>
         <span
-          className="text-gray-700"
+          className="text-dark-900"
           dangerouslySetInnerHTML={{ __html: description }}
         ></span>
       </div>

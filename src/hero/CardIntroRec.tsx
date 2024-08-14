@@ -37,7 +37,9 @@ const CardIntro: React.FC<CardProps> = ({
       break;
   }
   return (
-    <div className={`mx-2 grid grid-cols-12 p-4 ${posit} bg-white shadow-lg`}>
+    <div
+      className={`mx-2 grid grid-cols-12 p-4 ${posit} w-full bg-white shadow-lg`}
+    >
       {imageSrc ? (
         <div className="col-span-4 flex items-center justify-center">
           <div className="size-24 overflow-hidden rounded-full">
@@ -51,10 +53,10 @@ const CardIntro: React.FC<CardProps> = ({
       ) : (
         <div></div>
       )}
-      <div className="col-span-8">
-        <h3 className="mb-2 text-xl font-bold">{title}</h3>
+      <div className={` p-4 ${imageSrc ? 'col-span-8' : 'col-span-12'}`}>
+        <h3 className="mb-2 text-xl font-bold text-dark-900">{title}</h3>
         <span
-          className="text-gray-700"
+          className="text-dark-900"
           dangerouslySetInnerHTML={{ __html: description }}
         ></span>
       </div>

@@ -3,6 +3,7 @@ import { AppConfig } from '../utils/AppConfig';
 import { AIot } from './AIot';
 import { AquaCultural } from './AquaCultural';
 import { Banner } from './Banner';
+import { Benefit } from './Benefit';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
 
@@ -11,6 +12,7 @@ const Base = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
     <AquaCultural />
+    <Benefit />
     <AIot />
     <Banner />
     <Footer />

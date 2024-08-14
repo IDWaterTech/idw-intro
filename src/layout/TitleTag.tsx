@@ -4,15 +4,37 @@ type ISectionProps = {
   title?: string;
   subTitle?: string;
   decoration?: string;
+  center?: string;
 };
 
 const TitleTag = (props: ISectionProps) => (
-  <div className={styles.titleBox}>
-    <div className={styles.titleText}>
-      <div className={styles.title}>{props.title}</div>
-      <div className={styles.subtitle}>{props.subTitle}</div>
+  <div
+    // eslint-disable-next-line eqeqeq
+    className={`${styles.titleBox} ${props.center == 'true' ? 'relative' : ''}`}
+  >
+    <div
+      // eslint-disable-next-line eqeqeq
+      className={`${styles.titleText} ${props.center == 'true' ? 'w-full' : ''}`}
+    >
+      <div
+        // eslint-disable-next-line eqeqeq
+        className={`font-black ${styles.title} ${props.center == 'true' ? 'text-center' : ''}`}
+      >
+        {props.title}
+      </div>
+      <div
+        // eslint-disable-next-line eqeqeq
+        className={`font-black ${styles.subtitle} ${props.center == 'true' ? 'w-full text-center' : ''}`}
+      >
+        {props.subTitle}
+      </div>
     </div>
-    <div className={styles.decoration}>{props.decoration}</div>
+    <div
+      // eslint-disable-next-line eqeqeq
+      className={`font-bold ${styles.decoration} ${props.center == 'true' ? 'absolute right-60 top-0' : ''}`}
+    >
+      {props.decoration}
+    </div>
   </div>
 );
 

@@ -6,27 +6,27 @@ import { TitleTag } from '../layout/TitleTag';
 
 const cardInfo = [
   {
-    title: 'Title',
+    title: '即時監控與反應',
     description:
-      'content content content content content content content content content content content content.',
+      '24/7 實時監控水質、溫度、餌料消耗等關鍵指標。<br>緊急狀況自動通知，立即採取行動避免損失。',
     rightAnglesPosit: 5,
   },
   {
-    title: 'Title',
+    title: '全方位服務',
     description:
-      'content content content content content content content content content content content content.',
+      '提供從苗種選擇、餌料供應到成魚銷售的一站式服務。<br>專業技術團隊定期巡檢，提供諮詢和技術支持。',
     rightAnglesPosit: 5,
   },
   {
-    title: 'Title',
+    title: '成本優化',
     description:
-      'content content content content content content content content content content content content.',
+      '根據市場需求及時調整生產計劃，降低運營成本。<br>自動化設備和智能管理系統，減少人力和時間成本。',
     rightAnglesPosit: 5,
   },
   {
-    title: 'Title',
+    title: '客製化解決方案',
     description:
-      'content content content content content content content content content content content content.',
+      '根據客戶需求提供量身定制的養殖方案。<br>支援不同養殖模式，如陸地養殖、水上養殖等。',
     rightAnglesPosit: 5,
   },
 ];
@@ -41,7 +41,7 @@ const AquaCultural = () => (
           decoration="AQUACULTURAL SOLUTION"
         ></TitleTag>
         <div className="content py-8">
-          <span>
+          <span className="text-dark-900">
             搭配自動化設備，更快速即時管理養殖，提升養殖效率，確保最佳養殖環境。依照個人需求彈性設定調整，滿足不同的養殖需求與目標。
           </span>
         </div>
