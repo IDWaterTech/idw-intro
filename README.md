@@ -1,3 +1,20 @@
+# 指令
+## 開發
+```
+npm run dev
+```
+## 建立產品化檔案(server或靜態檔，視next.config.js裡面的output設定而決定)
+```
+npm run build
+```
+## 佈署至github pages
+```
+npm run deploy
+``` 
+注意 next.config.js 需有設定 basePath、assetPrefix
+
+#
+
 # Landing Page Template built with Next JS 14+, Tailwind CSS 3 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 <p align="center">
