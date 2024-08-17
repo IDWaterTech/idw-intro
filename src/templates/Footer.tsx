@@ -8,7 +8,7 @@ const Footer = () => (
       <div className={`${styles.footerContainer} flex`}>
         <div className="flex flex-1">
           <img
-            src="/assets/images/ID-WATER-LOGO-WHITE.png"
+            src="./assets/images/ID-WATER-LOGO-WHITE.png"
             width={200}
             alt="idwater"
           />

@@ -18,12 +18,13 @@
   backdrop-filter: blur(5px);
 }
 /* Hero */
-.bg {
+/* .bg {
+  github圖片引用時會出錯因此調整至background.tsx直接呼叫
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url('/assets/images/hero-bg.png');
   background-size: auto 100vh;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 /* 多樣功能部分的上下圖 */
 .topDecoration {
   top: 0;
@@ -64,7 +65,7 @@
     max-width: 200px;
   }
 }
-// scrollbar
+/* scrollbar*/ 
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
