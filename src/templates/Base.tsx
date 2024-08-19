@@ -6,6 +6,7 @@ import { Banner } from './Banner';
 import { Benefit } from './Benefit';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import { InformationTechnology } from './InformationTechnology';
 import { Menu } from './Menu';
 
 const Base = () => (
@@ -16,6 +17,7 @@ const Base = () => (
     <AquaCultural />
     <Benefit />
     <AIot />
+    <InformationTechnology />
     <Banner />
     <Footer />
   </div>

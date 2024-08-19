@@ -7,24 +7,20 @@ import styles from '../styles/hero.module.scss';
 
 const functionsImage = [
   {
-    name: '即時監測',
-    url: 'alert.png',
+    name: '智慧投餌系統',
+    url: 'feeding.png',
   },
   {
-    name: '數據分析',
-    url: 'chart.png',
+    name: '智慧觀察網',
+    url: 'observation.png',
   },
   {
-    name: 'AI養殖',
-    url: 'ai.png',
+    name: '水質檢測系統',
+    url: 'water.png',
   },
   {
-    name: '養成計畫',
-    url: 'daily.png',
-  },
-  {
-    name: '紀錄日誌',
-    url: 'calendar.png',
+    name: '專家系統',
+    url: 'expert-web.png',
   },
 ];
 const Hero = () => {

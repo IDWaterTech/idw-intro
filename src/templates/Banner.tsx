@@ -33,7 +33,7 @@ const cardInfo = [
 
 const Banner = () => (
   <div id="des">
-    <Background color="bg-primary-200">
+    <Background color="bg-primary-100">
       <img
         className="topDecoration absolute"
         src="./assets/images/decoration.png"

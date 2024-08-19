@@ -32,7 +32,7 @@ const Menu = () => {
           {navbarList.map((nav) => {
             return (
               <li
-                className={`mx-2 cursor-pointer text-base ${styles.listItem}`}
+                className={`mx-2 cursor-pointer text-base font-bold ${styles.listItem}`}
                 key={nav.id}
               >
                 <Link href={nav.url}>{nav.name}</Link>
