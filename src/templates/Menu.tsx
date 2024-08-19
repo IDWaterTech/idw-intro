@@ -26,13 +26,13 @@ const navbarList = [
 ];
 const Menu = () => {
   return (
-    <Background>
+    <Background color="bg-transparent">
       <Section yPadding="py-0 px-0" navbar="true">
         <NavbarTwoColumns logo={<Logo xl />}>
           {navbarList.map((nav) => {
             return (
               <li
-                className={`cursor-pointer text-base ${styles.listItem}`}
+                className={`mx-2 cursor-pointer text-base ${styles.listItem}`}
                 key={nav.id}
               >
                 <Link href={nav.url}>{nav.name}</Link>
