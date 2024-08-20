@@ -23,6 +23,11 @@ const functionsImage = [
     to: '/#tech',
   },
   {
+    name: '智慧電箱',
+    url: 'water.png',
+    to: '/#tech',
+  },
+  {
     name: '專家系統',
     url: 'expert-web.png',
     to: '/#tech',
