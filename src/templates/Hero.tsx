@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { Background } from '../background/Background';
@@ -58,7 +59,9 @@ const Hero = () => {
                 } ${styles['card-hover']}`}
                 key={`image_${i}`}
               >
-                <img src={`./assets/images/${image.url}`} alt={image.name} />
+                <Link href={image.to}>
+                  <img src={`./assets/images/${image.url}`} alt={image.name} />
+                </Link>
                 <span>{image.name}</span>
               </div>
             );
