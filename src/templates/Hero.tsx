@@ -54,7 +54,10 @@ const Hero = () => {
                 } ${styles['card-hover']}`}
                 key={`image_${i}`}
               >
-                <img src={`./assets/images/${image.url}`} alt={image.name} />
+                <img
+                  src={`./assets/images/hero/${image.url}`}
+                  alt={image.name}
+                />
                 <span>{image.name}</span>
               </div>
             );

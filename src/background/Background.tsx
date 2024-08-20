@@ -11,7 +11,7 @@ const Background = (props: IBackgroundProps) => (
     <style>
       {`
           .bg {
-                background-image:url(./assets/images/hero-bg.png);
+                background-image:url(./assets/images/hero/hero-bg.png);
                 background-size: auto 100vh;
                 background-position: center;
                 background-repeat: no-repeat;

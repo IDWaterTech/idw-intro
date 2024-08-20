@@ -42,7 +42,7 @@ const CardIntro: React.FC<CardProps> = ({
     >
       <div className="col-span-12 rounded-t-3xl">
         <img
-          className="h-[200px] w-full rounded-t-3xl object-cover p-8"
+          className="h-[200px] w-full rounded-t-3xl object-cover p-6"
           src={imageSrc}
           alt={title}
         />
