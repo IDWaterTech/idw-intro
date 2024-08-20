@@ -46,7 +46,7 @@ const Banner = () => (
       ></img>
       <Section>
         <TitleTag
-          title="多樣功能"
+          title="養殖專家系統"
           subTitle="精準掌握數據"
           decoration="Precision Analytics"
         ></TitleTag>

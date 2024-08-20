@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { Background } from '../background/Background';
@@ -9,18 +10,22 @@ const functionsImage = [
   {
     name: '智慧投餌系統',
     url: 'feeding.png',
+    to: '/#tech',
   },
   {
     name: '智慧觀察網',
     url: 'observation.png',
+    to: '/#tech',
   },
   {
     name: '水質檢測系統',
     url: 'water.png',
+    to: '/#tech',
   },
   {
     name: '專家系統',
     url: 'expert-web.png',
+    to: '/#tech',
   },
 ];
 const Hero = () => {
@@ -34,9 +39,9 @@ const Hero = () => {
         <HeroOneButton
           title={
             <>
-              {'ID Water 專家系統\n'}
+              {'ID WATER智慧水產養殖專家\n'}
               <span className="text-3xl font-normal">
-                打造可信賴的AI智慧養殖系統
+                提升養殖效率與精準管理的智能自動化解決方案
               </span>
             </>
           }
@@ -54,7 +59,9 @@ const Hero = () => {
                 } ${styles['card-hover']}`}
                 key={`image_${i}`}
               >
-                <img src={`./assets/images/${image.url}`} alt={image.name} />
+                <Link href={image.to}>
+                  <img src={`./assets/images/${image.url}`} alt={image.name} />
+                </Link>
                 <span>{image.name}</span>
               </div>
             );

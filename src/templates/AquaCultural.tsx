@@ -36,8 +36,8 @@ const AquaCultural = () => (
     <Background color="bg-primary-100">
       <Section>
         <TitleTag
-          title="即時、快速 "
-          subTitle="一站式養殖服務"
+          title="一站式養殖服務"
+          subTitle="即時、快速"
           decoration="AQUACULTURAL SOLUTION"
         ></TitleTag>
         <div className="content py-8 text-center">

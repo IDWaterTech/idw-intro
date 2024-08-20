@@ -36,8 +36,8 @@ const AIot = () => (
     <Background color="bg-primary-100">
       <Section>
         <TitleTag
-          title="AIoT"
-          subTitle="AI輔助有效監測"
+          title="AIoT自動化設備"
+          subTitle="智能輔助有效監測"
           decoration="AUTOMATION TECH"
         ></TitleTag>
         <div className="content flex py-8">

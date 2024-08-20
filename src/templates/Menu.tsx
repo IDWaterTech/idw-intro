@@ -10,18 +10,23 @@ import { Logo } from './Logo';
 const navbarList = [
   {
     id: 1,
-    name: 'ABOUT',
+    name: 'About',
     url: '/',
   },
   {
     id: 2,
-    name: 'TECHNIQUE',
+    name: 'AIot',
     url: '/#tech',
   },
   {
     id: 3,
-    name: 'DESCRIPTION',
-    url: '/#des',
+    name: 'SaaS',
+    url: '/#saas',
+  },
+  {
+    id: 3,
+    name: 'Contact',
+    url: '/#footer',
   },
 ];
 const Menu = () => {

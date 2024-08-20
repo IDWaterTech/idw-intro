@@ -34,12 +34,12 @@ const InformationTechnology = () => {
     setIsVisible(true); // 当组件挂载后，触发动画效果
   }, []);
   return (
-    <>
+    <div id="saas">
       <Background color="bg-primary-200">
         <Section>
           <TitleTag
-            title="資訊服務"
-            subTitle="智慧通報即時觀測"
+            title="SaaS資訊服務"
+            subTitle="智慧管理、資訊加值"
             decoration="Information Technology"
           ></TitleTag>
           <div
@@ -61,7 +61,7 @@ const InformationTechnology = () => {
           </div>
         </Section>
       </Background>
-    </>
+    </div>
   );
 };
 
