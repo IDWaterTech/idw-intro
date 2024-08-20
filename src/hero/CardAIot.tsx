@@ -64,7 +64,7 @@ const CardIntro: React.FC<CardProps> = ({
       ) : (
         <>
           <div
-            className={`grid size-full grid-cols-12 rounded-3xl bg-white p-4 shadow-lg ${styles.cardHover}`}
+            className={`grid w-full grid-cols-12 rounded-3xl bg-white p-4 shadow-lg ${styles.cardHover}`}
           >
             <div className="col-span-4 flex items-start justify-center">
               <div className="size-24 overflow-hidden rounded-full">
