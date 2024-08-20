@@ -19,7 +19,7 @@ const functionsImage = [
   },
   {
     name: '水質檢測系統',
-    url: 'water.png',
+    url: 'water-test.png',
     to: '/#tech',
   },
   {
