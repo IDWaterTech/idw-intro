@@ -60,7 +60,10 @@ const Hero = () => {
                 key={`image_${i}`}
               >
                 <Link href={image.to}>
-                  <img src={`./assets/images/${image.url}`} alt={image.name} />
+                  <img
+                    src={`./assets/images/hero/${image.url}`}
+                    alt={image.name}
+                  />
                 </Link>
                 <span>{image.name}</span>
               </div>
