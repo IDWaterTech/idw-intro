@@ -1,3 +1,5 @@
+import BackToTopButton from '@/button/BackToTopButton';
+
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { AIot } from './AIot';
@@ -12,6 +14,7 @@ import { Menu } from './Menu';
 const Base = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+    <BackToTopButton />
     <Menu />
     <Hero />
     <AquaCultural />
