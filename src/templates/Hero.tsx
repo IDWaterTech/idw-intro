@@ -30,7 +30,7 @@ const functionsImage = [
   {
     name: '專家系統',
     url: 'expert-web.png',
-    to: '/#tech',
+    to: '/#saas',
   },
 ];
 const Hero = () => {

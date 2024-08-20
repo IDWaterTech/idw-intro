@@ -57,7 +57,7 @@ const InformationTechnology = () => {
                     src={`./assets/images/information/${image.url}`}
                     alt={image.name}
                   />
-                  <span>{image.name}</span>
+                  <span className={styles.name}>{image.name}</span>
                 </div>
               );
             })}

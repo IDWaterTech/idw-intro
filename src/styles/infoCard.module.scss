@@ -1,0 +1,44 @@
+.card {
+  .cardHover {
+    animation: cardFade 0.5s;
+  }
+  .info {
+    // opacity: 0;
+    // transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    // transition: all 0.5s;
+    animation: infoFade 0.5s;
+  }
+  // &:hover {
+  //   .cardHover {
+  //     transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+  //     opacity: 0;
+  //   }
+  //   .info {
+  //     transform: rotate3d(1, 0, 0, 0deg);
+  //     opacity: 1;
+  //     background-color: #D9E9F2;
+  //     color: #fefefe;
+  //   }
+  // }
+}
+@keyframes cardFade {
+  50%{
+    transform: translate3d(0, 80px, 0) rotate3d(1, 0, 0, -90deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes infoFade {
+  0% {
+    transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+  }
+  50%{
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+

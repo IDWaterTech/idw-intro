@@ -5,6 +5,7 @@ interface CardProps {
   title: string;
   description: string;
   rightAnglesPosit?: number; // 直角保留 全部0 左上1 右上2 左下3 右下4 全園5
+  isAIot?: string;
 }
 
 const CardIntro: React.FC<CardProps> = ({
