@@ -36,12 +36,12 @@ const Banner = () => (
     <Background color="bg-primary-100">
       <img
         className="topDecoration absolute"
-        src="./assets/images/decoration.png"
+        src="./assets/images/description/decoration.png"
         alt="decoration"
       ></img>
       <img
         className="bottomDecoration absolute"
-        src="./assets/images/decoration.png"
+        src="./assets/images/description/decoration.png"
         alt="decoration"
       ></img>
       <Section>
@@ -56,7 +56,7 @@ const Banner = () => (
               // eslint-disable-next-line react/jsx-key
               <div className="infoBox mb-6 flex w-6/12" key={i}>
                 <CardIntro
-                  imageSrc={`./assets/images/${info.imageSrc}`}
+                  imageSrc={`./assets/images/description/${info.imageSrc}`}
                   title={info.title}
                   description={info.description}
                   rightAnglesPosit={info.rightAnglesPosit}
