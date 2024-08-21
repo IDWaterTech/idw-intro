@@ -53,7 +53,7 @@ const AquaCultural = () => (
             {cardInfo.map((info, i) => {
               return (
                 // eslint-disable-next-line react/jsx-key
-                <div className="infoBox mb-6 flex  w-6/12" key={i}>
+                <div className="infoBox mb-6 flex w-6/12 px-2" key={i}>
                   <CardIntroRec
                     title={info.title}
                     description={info.description}

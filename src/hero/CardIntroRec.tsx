@@ -38,9 +38,7 @@ const CardIntro: React.FC<CardProps> = ({
       break;
   }
   return (
-    <div
-      className={`mx-2 grid grid-cols-12 p-4 ${posit} w-full bg-white shadow-lg`}
-    >
+    <div className={`grid grid-cols-12 p-4 ${posit} w-full bg-white shadow-lg`}>
       {imageSrc ? (
         <div className="col-span-4 flex items-center justify-center">
           <div className="size-24 overflow-hidden rounded-full">
