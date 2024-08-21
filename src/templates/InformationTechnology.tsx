@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import { TitleTag } from '@/layout/TitleTag';
 
 import { Background } from '../background/Background';
@@ -29,10 +27,6 @@ const functionsImage = [
   },
 ];
 const InformationTechnology = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    setIsVisible(true); // 当组件挂载后，触发动画效果
-  }, []);
   return (
     <div id="saas">
       <Background color="bg-primary-200">
@@ -48,9 +42,7 @@ const InformationTechnology = () => {
             {functionsImage.map((image, i) => {
               return (
                 <div
-                  className={`flex flex-col items-center justify-center ${styles.imageBox} ${styles['card-animation']} ${
-                    isVisible ? styles['card-animation-enter'] : ''
-                  } ${styles['card-hover']}`}
+                  className={`flex flex-col items-center justify-center ${styles.imageBox}`}
                   key={`image_${i}`}
                 >
                   <img

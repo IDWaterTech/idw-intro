@@ -12,3 +12,12 @@
     }
   }
 }
+
+
+@media (max-width: 425px) {
+  .imageGroup { 
+    .imageBox{
+      flex: 0 0 30%;
+    }
+  }
+}
