@@ -70,7 +70,9 @@ const Hero = () => {
                     alt={image.name}
                   />
                 </Link>
-                <span>{image.name}</span>
+                <span style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+                  {image.name}
+                </span>
               </div>
             );
           })}
