@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface CardProps {
   imageSrc: string;
@@ -13,6 +13,32 @@ const CardIntro: React.FC<CardProps> = ({
   description,
   rightAnglesPosit = 0,
 }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (cardRef.current) {
+        const cardTop = cardRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardTop < windowHeight) {
+          cardRef.current.style.opacity = '1';
+          cardRef.current.style.transform = 'translateY(0)';
+          cardRef.current.style.transition =
+            'opacity 1s ease-out, transform 1s ease-out';
+        } else {
+          cardRef.current.style.opacity = '0';
+          cardRef.current.style.transform = 'translateY(100px)';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   let posit = '';
   switch (rightAnglesPosit) {
     case 0: // 全部都直角
@@ -38,6 +64,7 @@ const CardIntro: React.FC<CardProps> = ({
   }
   return (
     <div
+      ref={cardRef}
       className={`mx-2 grid grid-cols-12 p-4 ${posit} bg-white shadow-lg max-[768px]:rounded-3xl`}
     >
       <div className="col-span-12 rounded-t-3xl">
