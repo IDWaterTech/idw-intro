@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+
 import { TitleTag } from '@/layout/TitleTag';
 
 import { Background } from '../background/Background';
@@ -27,6 +29,31 @@ const functionsImage = [
   },
 ];
 const InformationTechnology = () => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (cardRef.current) {
+        const cardTop = cardRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardTop < windowHeight) {
+          cardRef.current.style.opacity = '1';
+          cardRef.current.style.transform = 'translateY(0)';
+          cardRef.current.style.transition =
+            'opacity 1s ease-out, transform 1s ease-out';
+        } else {
+          cardRef.current.style.opacity = '0';
+          cardRef.current.style.transform = 'translateY(100px)';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div id="saas">
       <Background color="bg-primary-200">
@@ -37,6 +64,7 @@ const InformationTechnology = () => {
             decoration="Information Technology"
           ></TitleTag>
           <div
+            ref={cardRef}
             className={`my-8 flex w-full flex-wrap items-center justify-center ${styles.imageGroup}`}
           >
             {functionsImage.map((image, i) => {
