@@ -60,6 +60,8 @@ const Menu = () => {
                 background-color: #fff; /* 更改背景顏色 */
                 padding: 10px 0; /* 改變內邊距，縮小 header */
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加陰影以區分 header 和內容 */
+                width: 100%;
+                height: 64px;
               }
           }
         `}
