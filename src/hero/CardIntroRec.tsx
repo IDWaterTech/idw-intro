@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface CardProps {
   imageSrc?: string;
@@ -37,8 +37,38 @@ const CardIntro: React.FC<CardProps> = ({
     default:
       break;
   }
+  // 進入動畫
+  const cardRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (cardRef.current) {
+        const cardTop = cardRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardTop < windowHeight) {
+          cardRef.current.style.opacity = '1';
+          cardRef.current.style.transform = 'translateY(0)';
+          cardRef.current.style.transition =
+            'opacity 1s ease-out, transform 1s ease-out';
+        } else {
+          cardRef.current.style.opacity = '0';
+          cardRef.current.style.transform = 'translateY(100px)';
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={`grid grid-cols-12 p-4 ${posit} w-full bg-white shadow-lg`}>
+    <div
+      ref={cardRef}
+      className={`grid grid-cols-12 p-4 ${posit} w-full bg-white shadow-lg`}
+    >
       {imageSrc ? (
         <div className="col-span-4 flex items-center justify-center">
           <div className="size-24 overflow-hidden rounded-full">

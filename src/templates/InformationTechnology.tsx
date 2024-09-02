@@ -56,7 +56,7 @@ const InformationTechnology = () => {
   }, []);
   return (
     <div id="saas">
-      <Background color="bg-primary-200">
+      <Background color="bg-primary-100">
         <Section>
           <TitleTag
             title="SaaS資訊服務"

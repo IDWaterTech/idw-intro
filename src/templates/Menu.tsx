@@ -44,14 +44,6 @@ const Menu = () => {
               </li>
             );
           })}
-          {/* <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li> */}
         </NavbarTwoColumns>
       </Section>
     </Background>

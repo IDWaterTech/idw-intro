@@ -40,7 +40,7 @@ const cardInfo = [
 
 const Benefit = () => (
   <>
-    <Background color="bg-primary-200">
+    <Background color="bg-primary-100">
       <Section>
         <TitleTag
           title="8大優勢"
@@ -52,7 +52,7 @@ const Benefit = () => (
           {/* <div className="imgBox mx-2">
             <img src="/assets/images/menu.png" alt=""></img>
           </div> */}
-          <div className="svgGroup grid w-full grid-cols-4">
+          <div className="svgGroup grid w-full grid-cols-2 sm:grid-cols-4">
             {cardInfo.map((info, i) => {
               return (
                 // eslint-disable-next-line react/jsx-key
@@ -61,7 +61,7 @@ const Benefit = () => (
                     className="svgBox relative size-8 bg-white shadow-sm"
                     dangerouslySetInnerHTML={{ __html: info.svg }}
                   ></div>
-                  <div className="title mx-1 text-xl font-black text-dark-900">
+                  <div className="title mx-1 text-2xl text-dark-900">
                     {info.title}
                   </div>
                 </div>
