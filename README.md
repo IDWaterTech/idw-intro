@@ -1,4 +1,6 @@
 # 指令
+# page
+[site](https://idwatertech.github.io/idw-intro/)
 ## 開發
 ```
 npm run dev
